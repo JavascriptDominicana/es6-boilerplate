@@ -1,0 +1,19 @@
+{
+  "name": "babeljs-boilerplate",
+  "version": "0.0.0",
+  "authors": [
+    "Rene Olivo <minet.ws@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "system.js": "~0.16.1",
+    "es6-module-loader": "~0.16.0"
+  }
+}
