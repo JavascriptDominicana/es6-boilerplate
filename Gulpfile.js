@@ -36,6 +36,11 @@ gulp.task("build", function(callback) {
   );
 });
 
+gulp.task("watch", function(callback) {
+  gulp.watch(app.source, ['build-app']);
+  gulp.watch(app.html, ['build-html']);
+});
+
 gulp.task("default", function(callback) {
   return runSequence("build");
 });
