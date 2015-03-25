@@ -1,0 +1,19 @@
+{
+  "name": "babeljs-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^4.0.0",
+    "gulp-changed": "^1.2.1",
+    "gulp-sourcemaps": "^1.5.1",
+    "run-sequence": "^1.0.2"
+  }
+}
