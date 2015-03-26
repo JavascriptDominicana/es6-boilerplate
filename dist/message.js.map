@@ -1,0 +1,1 @@
+{"version":3,"sources":["message.js"],"names":[],"mappings":";MAAI,OAAO;;;;;;AAAP,aAAO,GAAG,cAAc;;yBAEb,OAAO","file":"message.js","sourcesContent":["var message = 'Hellow World';\n\nexport default message;"],"sourceRoot":"/source/"}
