@@ -8,6 +8,7 @@ var runSequence = require("run-sequence");
 var app = {
   source: "./src/**/*.js",
   html: "./src/**/*.html",
+  files: "./src/**/*.*",
   dist: "./dist"
 };
 
@@ -24,12 +25,18 @@ gulp.task("copy-html", function() {
     .pipe(gulp.dest(app.dist));
 });
 
+gulp.task("copy-everything", function() {
+  return gulp.src(app.files)
+    .pipe(gulp.dest(app.dist))
+});
+
 gulp.task("clean", function(callback) {
   del([app.dist], callback);
 });
 
 gulp.task("build", function(callback) {
   return runSequence(
+    'copy-everything',
     "clean",
     [ "build-app", "copy-html"],
     callback
