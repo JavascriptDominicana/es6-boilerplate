@@ -51,8 +51,8 @@ gulp.task("build", function(callback) {
 
 gulp.task("watch", function(callback) {
   gulp.watch(app.source, ['build-app']);
-  gulp.watch(app.html, ['build-html']);
-  gulp.watch(app.css, ['build-css']);
+  gulp.watch(app.html, ['copy-html']);
+  gulp.watch(app.css, ['copy-css']);
 });
 
 gulp.task("default", function(callback) {
