@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Javascript Dominicana</title>
+    <meta charset="utf8" />
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="mainGallery" class="gallery row">
+        <h1>Gallery</h1>
+
+        <div class="image-popup"></div>
+
+        <div class="images"></div>
+      </div>
+    </div>
+
+    <script src="../../bower_components/es6-module-loader/dist/es6-module-loader.js"></script>
+    <script src="../../bower_components/system.js/dist/system.js"></script>
+    <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+    <script>
+      System.config({
+        map: {
+          jQuery: '../../bower_components/jquery/dist/jquery.min',
+          Bootstrap: '../../bower_components/bootstrap/dist/js/bootstrap.min'
+        }
+      });
+
+      System.import('./js/app').then(function(main) {
+        main.App.start();
+      });
+    </script>
+  </body>
+</html>
